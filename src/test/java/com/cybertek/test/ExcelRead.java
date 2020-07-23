@@ -40,5 +40,19 @@ public class ExcelRead {
                 System.out.println("Neena's name: " + sheet.getRow(rowNum).getCell(0));
             }
         }
+
+        //TODO: 2- CREATE A LOGIC THAT PRINTS OUT ADAM'S LAST NAME DYNAMICALLY
+        for (int rowNum = 0; rowNum < usedRows; rowNum++) {
+            if (sheet.getRow(rowNum).getCell(0).toString().equals("Adam")) {
+                System.out.println("Adam's last name: " + sheet.getRow(rowNum).getCell(1));
+            }
+        }
+
+        //TODO: 3- PRINT OUT STEVEN'S JOB ID DYNAMICALLY
+        for (int rowNum = 0; rowNum < usedRows; rowNum++) {
+            if (sheet.getRow(rowNum).getCell(0).toString().equals("Steven")) {
+                System.out.println("Steven's job ID: " + sheet.getRow(rowNum).getCell(2));
+            }
+        }
     }
 }
